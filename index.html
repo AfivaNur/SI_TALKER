@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,12 +24,15 @@
   </header>
 
   <!-- ========== HERO ========== -->
-  <section  class="hero">
+  <section class="hero">
     <div id="download" class="hero-text">
       <h1>Hallo!</h1>
       <h2>Pelayanan Administrasi digital yang Cepat dan Mudah</h2>
       <p>Sistem Informasi Pelayanan Administrasi Kelurahan Talang Keramat</p>
       <a href="app-release.apk" class="btn-download">Unduh Aplikasi Android (.apk)</a>
+      <p class="guide-text"><a href="MANUAL_BOOK_SI_TALKER.pdf" class="download-link" download>📘 Download Guide Book (PDF)</a>
+      </p>
+
     </div>
     <div class="hero-img">
       <img src="awal.png" alt="Tampilan Aplikasi" />
@@ -71,8 +75,8 @@
   </section>
 
   <!-- ========== LANGKAH ========== -->
-   <!-- LANGKAH -->
-<section id="langkah" class="steps">
+  <!-- LANGKAH -->
+  <section id="langkah" class="steps">
     <div class="container">
       <h2>Cara Menggunakan</h2>
       <div class="step-card">
@@ -86,41 +90,42 @@
     </div>
   </section>
 
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <p>© 2025 SI TALKER | Afiva Nurkamila | Kelurahan Talang Keramat</p>
-</footer>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>© 2025 SI TALKER | Afiva Nurkamila | Kelurahan Talang Keramat</p>
+  </footer>
 
 
-   <!-- ========== GESER ========== -->
+  <!-- ========== GESER ========== -->
   <script>
-  const slides = document.querySelector(".slides");
-  const slideImages = document.querySelectorAll(".slides img");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
+    const slides = document.querySelector(".slides");
+    const slideImages = document.querySelectorAll(".slides img");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
 
-  let index = 0;
+    let index = 0;
 
-  function showSlide() {
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  }
+    function showSlide() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
 
-  next.addEventListener("click", () => {
-    index = (index + 1) % slideImages.length;
-    showSlide();
-  });
+    next.addEventListener("click", () => {
+      index = (index + 1) % slideImages.length;
+      showSlide();
+    });
 
-  prev.addEventListener("click", () => {
-    index = (index - 1 + slideImages.length) % slideImages.length;
-    showSlide();
-  });
+    prev.addEventListener("click", () => {
+      index = (index - 1 + slideImages.length) % slideImages.length;
+      showSlide();
+    });
 
-  // Opsional: auto-slide setiap 4 detik
-  setInterval(() => {
-    index = (index + 1) % slideImages.length;
-    showSlide();
-  }, 4000);
+    // Opsional: auto-slide setiap 4 detik
+    setInterval(() => {
+      index = (index + 1) % slideImages.length;
+      showSlide();
+    }, 4000);
 
-</script>
+  </script>
 </body>
+
 </html>

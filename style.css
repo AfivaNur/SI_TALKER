@@ -139,6 +139,25 @@ body {
   background: #daf5f5;
 }
 
+.guide-text {
+  font-size: 13px !important;
+  color: #ffffff; 
+  margin-top: 12px;
+}
+
+.download-link {
+  color: #ffffff; 
+  text-decoration: none;
+  margin-left: 6px;
+  transition: color 0.2s ease;
+}
+
+.download-link:hover {
+  color: #1bae9b;
+  text-decoration: underline;
+}
+
+
 /* === FITUR === */
 .features {
   background: var(--bg-light);
