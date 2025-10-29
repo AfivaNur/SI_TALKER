@@ -1,6 +1,6 @@
 :root {
-  --primary: #1bae9b;
-  --gradient: linear-gradient(135deg, #1bae9b, #27d1b8, #8affed);
+  --primary: #67ae34;
+  --gradient: linear-gradient(135deg, #67ae34, #8ecd62, #b1ef85);
   --text-dark: #333;
   --bg-light: #f9f9f9;
   --radius: 16px;
@@ -136,13 +136,13 @@ body {
 
 .btn-download:hover {
   transform: translateY(-3px);
-  background: #daf5f5;
+  background: #b1ef85;
 }
 
 .guide-text {
   font-size: 13px !important;
   color: #ffffff; 
-  margin-top: 12px;
+  margin-top: 8px  !important;
 }
 
 .download-link {
@@ -242,14 +242,14 @@ body {
   height: 45px;
   cursor: pointer;
   font-size: 1.4em;
-  color: #1bae9b;
+  color: #67ae34;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
 .prev:hover, .next:hover {
-  background: rgba(27, 174, 155, 0.8);
+  background: #67ae34(27, 174, 155, 0.8);
   color: white;
   transform: translateY(-50%) scale(1.1);
 }
