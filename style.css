@@ -377,6 +377,10 @@ footer {
     padding: 60px 20px;
   }
 
+
+}
+
+
 .footer {
   display: flex;            /* fleksibel, gambar & teks sejajar */
   align-items: center;      /* vertikal sejajar */
@@ -394,5 +398,84 @@ footer {
   object-fit: contain; 
 }
 
+/* ======= VIDEO SECTION ======= */
+
+.video-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Wadah utama video */
+.video-wrapper {
+  max-width: 720px;         /* Ubah nilai ini untuk mengecilkan ukuran */
+  margin: 0 auto;           /* Agar di tengah */
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Agar video menyesuaikan wadah */
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .video-wrapper {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .video-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Custom warna judul */
+.video-section h2 {
+  color: #3cb44a;           /* ← ubah sesuai warna yang kamu mau */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* opsional, bikin huruf besar semua */
+  letter-spacing: 1px;       /* sedikit spasi antar huruf */
+}
+
+/* Wadah video */
+.video-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsif video */
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .video-section h2 {
+    font-size: 22px;
+  }
+}
+
 
 }
+
